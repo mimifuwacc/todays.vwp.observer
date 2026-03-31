@@ -52,7 +52,7 @@ app.get("/", async (c) => {
     // ETagを設定（日付が変わるとキャッシュが更新される）
     c.header("ETag", `"${song.selectedDate}"`);
 
-    const postContent = `#vwp_todays\nV.W.P Today's Song\nhttps://www.youtube.com/watch?v=${song.videoId}`;
+    const postContent = `V.W.P Today's Song\n#vwp_todays\nhttps://www.youtube.com/watch?v=${song.videoId}`;
 
     return c.render(
       <>
