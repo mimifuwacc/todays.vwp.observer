@@ -1,7 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "today-vwp-observer",
-  "account_id": "c72b6193146d141b720aa83415a3bc00",
   "compatibility_date": "2025-08-03",
   "main": "./src/index.tsx",
   "vars": {
@@ -14,11 +13,4 @@
       "database_id": "1afcd3eb-a45e-4a66-90aa-1bd06a52d68a",
     },
   ],
-  "triggers": {
-    "crons": [
-      {
-        "cron": "0 15 * * *",
-      },
-    ],
-  },
 }
