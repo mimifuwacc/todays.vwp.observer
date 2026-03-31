@@ -3,7 +3,7 @@ import { Link, ViteClient } from "vite-ssr-components/hono";
 
 export const renderer = jsxRenderer(async ({ children }, c) => {
   const title = "V.W.P Today's Song";
-  const description = "";
+  const description = "So that I will never forget V.W.P...";
   const image = "https://todays.vwp.observer/og.png";
   const url = "https://todays.vwp.observer/";
 
