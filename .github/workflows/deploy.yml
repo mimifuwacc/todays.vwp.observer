@@ -24,10 +24,10 @@ jobs:
       - run: pnpm build
 
       - uses: cloudflare/wrangler-action@v3
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           secrets: |
             YOUTUBE_API_KEY
-          secretMappings: |
-            YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}
