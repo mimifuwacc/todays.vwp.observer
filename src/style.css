@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.font-sorts {
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+.font-noto-sans {
+  font-family: "Noto Sans JP", sans-serif;
+}

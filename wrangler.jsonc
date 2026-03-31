@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "todays-vwp-observer",
+  "compatibility_date": "2025-08-03",
+  "main": "./src/index.tsx",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vwp-songs",
+      "database_id": "1afcd3eb-a45e-4a66-90aa-1bd06a52d68a",
+    },
+  ],
+}
